@@ -1,0 +1,45 @@
+---
+output: github_document
+---
+
+
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# ceeds
+<!-- badges: start -->
+[![Travis build status](https://travis-ci.org/beanumber/ceeds.svg?branch=master)](https://travis-ci.org/beanumber/ceeds)
+<!-- badges: end -->
+
+
+The goal of `ceeds` is to provide R functionality for [Center for the Environment, Ecological Design, and Sustainability](https://www.smith.edu/about-smith/sustainable-smith/campus-sustainability) at Smith College.
+
+## Installation
+
+You can install `ceeds` from GitHub with:
+
+```{r, eval=FALSE}
+devtools::install_github("beanumber/ceeds")
+```
+
+## Run the Dashboard
+
+
+```{r, eval=FALSE}
+ceeds::run_dashboard()
+```
+
+```{r, eval=FALSE, include=FALSE}
+webshot::appshot(system.file("shiny-macleish", package = "ceeds"), 
+                 "inst/ceeds.png")
+```
+
+![](inst/ceeds.png)
